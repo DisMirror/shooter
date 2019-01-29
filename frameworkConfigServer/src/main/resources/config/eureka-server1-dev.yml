@@ -1,0 +1,15 @@
+server:
+  port: 8051
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://localhost:8052/eureka/
+  server:
+     enable-self-preservation: false
+     eviction-interval-timer-in-ms: 1000
+  instance:
+     hostname: sever1

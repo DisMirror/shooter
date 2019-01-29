@@ -1,0 +1,16 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: framework-config-server
+  profiles:
+    active: native #本地
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+        #git:
+          #uri: http://123.206.58.154:3000/admintelecom/framework.git
+          #username:
+          #password:
